@@ -17,7 +17,7 @@
                     <label for="status" class="label">
                         <span class="label-text">進み具合:</span>
                     </label>
-                    <input type="text" name="title" class="input input-bordered w-full">
+                    <input type="text" name="status" class="input input-bordered w-full">
                 </div>
             <button type="submit" class="btn btn-primary btn-outline">投稿</button>
         </form>

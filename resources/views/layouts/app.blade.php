@@ -11,7 +11,7 @@
 
     <body>
         <div class="container mx-auto">
-
+            @include('commons.error_messages')
             @yield('content')
         </div>
 
