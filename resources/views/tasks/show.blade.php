@@ -13,6 +13,10 @@
             <th>タスク</th>
             <td>{{ $task->content }}</td>
         </tr>
+        <tr>
+            <th>進み具合</th>
+            <td>{{ $task->status }}</td>
+        </tr>
     </table>
     <a class="btn btn-outline" href="{{ route('tasks.edit', $task->id) }}">このタスクを編集</a>
     
