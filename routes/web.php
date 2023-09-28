@@ -6,7 +6,7 @@ use App\Http\Controllers\TasksController;
 use App\Http\Controllers\RouteServiceProvider;
 
 Route::get('/', function () {
-    return view('welcome');})->name('welcome');
+    return view('dashboard');})->name('welcome');
 
 Route::get('/dashboard', function () {
     return view('tasks.index');

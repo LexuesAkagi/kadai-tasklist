@@ -4,7 +4,7 @@
             <h2>タスク 一覧</h2>
         </div>
         
-        @if (isset($tasks))
+        @if ($tasks->isNotEmpty())
             <table class="table table-zebra w-full my-4">
                 <thead>
                     <tr>
@@ -25,6 +25,9 @@
                     @endforeach
                 </tbody>
             </table>
+        @else
+            <h3>タスクがありません</h3>
         @endif
+        
         <a class="btn btn-primary" href="{{ route('tasks.create') }}">新規タスクの追加</a>
 @endsection
